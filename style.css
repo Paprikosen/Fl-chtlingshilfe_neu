@@ -19,24 +19,29 @@ body {
     
 }
 
-
-
 header {
-    display: flex;
-    height: 10vh;
+    position: relative;
+    height: 60px;
     background-color: white;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: nowrap;
     position: fixed;
     width: 100%;
     top: 0;
 }
 
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 70%;
+    max-width: 800px;
+    margin: auto;    
+}
+
 nav {
     display: flex;
     gap: 20px;
-    margin-right: 20px;
 }
 
 
@@ -44,7 +49,7 @@ nav {
     display: flex;
     height: 30px;
     margin-right: auto;
-    margin-left: 10px;
+   
     max-width: 170px;
     align-items: center;
     justify-content: center;
@@ -62,13 +67,29 @@ nav {
 }
 
 .introduction {
-    margin-top: 15vh;
+    margin-top: 10vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+}
+
+p, div, button {
+    font-family: 'Bree Serif', serif;
 }
 
 h1 {
-    font-family: 'Cinzel', serif;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+}
+
+#logo {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
 }
 
 h2 {
@@ -80,13 +101,14 @@ h2 {
 }
 
 p {
-    font-family: 'Bree Serif', serif;
+    
     font-size: 16px;
     font-weight: 400;
 }
 
 section {
     width: 70%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -113,9 +135,9 @@ section {
   }
 
   .collapsible.toggle {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     text-align: left;
-    color: black;
+    color: var(--darkblue);
     width: 100%;    
     border-bottom: 1px solid black;
 }
@@ -128,6 +150,11 @@ section {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     text-align: left;
+    color: black;
   }
+
+.content > p {
+    font-size: 0.8rem;
+}
