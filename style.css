@@ -7,7 +7,12 @@
 /*font-family: 'Bree Serif', serif;
 font-family: 'Cinzel', serif; */
 
+a {
+    font-size: 1.8rem;
+}
 
+
+@media (min-width: 1250px) {
 * {
     margin: 0;
     padding: 0;
@@ -18,18 +23,39 @@ body {
     background-color: var(--white);
     color: var(--darkblue);
     width: 100%;
-    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "left main"
+                         "left main";
 }
 
 header {
-    position: relative;
-    height: 60px;
-    background-color: white;
+    grid-area: header;
     position: fixed;
+    height: 90px;
+    background-color: white;
+    position: relative;
     width: 100%;
-    top: 0;
+    left: 0;
+}
+main {
+    grid-area: main;
 }
 
+.left {
+    grid-area: left;
+    background-color: #fff;
+    height: 100vh;
+    width: 40%;
+    position: fixed;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -41,31 +67,44 @@ header {
     margin: auto;    
 }
 
+#whatsapp {
+    width: 40px;
+    height: 40px;
+}
+
+#deutsch {
+    width: 40px;
+    height: 40px;
+}
+
+#ukrainisch {
+    width: 40px;
+    height: 40px;
+}
+
 nav {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 #header-button {
     display: flex;
-    height: 30px;
+    height: 50px;
     margin-right: auto;
-   
-    max-width: 170px;
+    max-width: 250px;
     align-items: center;
     justify-content: center;
-    padding: 0 7px;
+    padding: 0 8px;
     background-color: var(--green);
     color: var(--white);
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     gap: 5px;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
-
-.introduction {
-    margin-top: 10vh;
+#first_text {
+    margin-top: 150px;
 }
 
 h1, h2, h3 {
@@ -78,30 +117,30 @@ p, div, button {
 
 h1 {
     text-align: center;
-    margin-bottom: 0px;
-    font-size: 2.7rem;
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: -50px;
 }
 
 #logo {
     display: flex;
     margin: auto;
-    width: 50%;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
-    max-width: 250px;
+    max-width: 500px;
 }
 
 h2 {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
     font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 p {
-    
-    font-size: 16px;
+    font-size: 1.9rem;
     font-weight: 400;
 }
 
@@ -117,36 +156,39 @@ section {
     border: none;
     text-align: center;
     outline: none;
-    font-size: 17px;
     margin: 5px 0;
     border-radius: 5px 50px 50px 5px;
-    transition: 1s;
   }
 
   .collapsible {
     cursor: pointer;
-    padding: 18px;
     width: 100%;
+    padding: 18px;
     background: transparent;
-    border:none;
-    color: white;
     border: none;
+    color: white;
+    font-size: 2rem;
+    text-align: left;
   }
 
-  .collapsible.toggle {
-    background-color: #ffffff;
+.collapsible.toggle {
+    background-color: #fff;
     text-align: left;
+    padding-left: 0;
     color: var(--darkblue);
     width: 100%;   
     border: none;
 }
 
-.collapsible.toggle:last-of-type {
-    border-bottom: none;
+.collapsible.toggle.thirdLayer {
+    margin-top: -12px;
+    margin-left: 8px;
 }
 
+
+
 .content {
-    padding: 0 18px;
+    padding: 0px 18px;
     display: none;
     overflow: hidden;
     background-color: #ffffff;
@@ -154,13 +196,66 @@ section {
     color: black;
   }
 
-.content > p {
-    font-size: 0.8rem;
+.content:last-of-type {
+    border-radius: 0 0 30px 0;
+}
+
+.content > p, li {
+    font-size: 2rem;
+    color: var(--darkblue);
+    margin-top: 10px;   
+    margin-bottom: 10px;
+    padding: 7px 0;
+}
+
+.content > .thirdLayer {
+    margin-top: 5px;
+    padding-bottom: 12px;
+    margin-left: 8px;
+}
+
+li {
+    margin-left: 14px;
+}
+
+.padding {
+    margin-left: -18px;
+}
+
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 12px;
+    text-align: center;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-left: -3px;
+    margin-bottom: 1px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+    margin-right: 9px;
+  }
+
+  .dropdown {
+    border: solid var(--darkblue);
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    margin-bottom: 3px;
+  }
+
 }
 
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1250px) {
     * {
         margin: 0;
         padding: 0;
@@ -171,6 +266,7 @@ section {
         background-color: var(--white);
         color: var(--darkblue);
         width: 100%;
+        display: relative;
         
     }
     header {
@@ -197,7 +293,10 @@ section {
         display: flex;
         gap: 20px;
     }
-    
+    .left {
+        margin-top: 10vh;
+    }
+
     #header-button {
         display: flex;
         height: 30px;
@@ -216,7 +315,6 @@ section {
     
     
     .introduction {
-        margin-top: 10vh;
         width: 90%;
         position: relative;
     }
@@ -284,8 +382,9 @@ section {
       .collapsible {
         cursor: pointer;
         width: 100%;
+        padding: 18px;
         background: transparent;
-        border:none;
+        border: none;
         color: white;
         font-size: 2rem;
         text-align: left;
@@ -299,9 +398,9 @@ section {
         width: 100%;
         text-align: left;
     }
-    
-    .collapsible.toggle:last-of-type {
-        border-bottom: none;
+    .collapsible.toggle.thirdLayer {
+        margin-top: -12px;
+        margin-left: 8px;
     }
     
     .content {
@@ -313,17 +412,28 @@ section {
         color: black;
       }
 
-      .content > p {
-        padding: 7px 0;
-      }
-    
-    .content > p {
+    .content:last-of-type {
+        border-radius: 0 0 30px 0;
+    }
+
+    .content > p, li {
         font-size: 1.8rem;
         color: var(--darkblue);
         margin-top: 10px;   
         margin-bottom: 10px;
+        padding: 7px 0;
     }
 
+    .content > .thirdLayer {
+        margin-top: 5px;
+        padding-bottom: 12px;
+        margin-left: 8px;
+    }
+
+    li {
+        margin-left: 14px;
+    }
+    
     .padding {
         margin-left: -18px;
     }

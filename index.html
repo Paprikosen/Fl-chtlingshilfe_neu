@@ -43,12 +43,13 @@
 </head>
 
 <body>
-    <header>
+    <div class="left">
+    <header class="header">
         <!-- Hier: Ansprechendes Bild von Morsbach und Überschrift.
          + Möglichkeit die Sprache der Seite zu ändern. -->
          <div class="navbar">
             <button id="header-button">
-                <svg width="20" height="20" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="whatsapp" width="20" height="20" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M33.5 64.9062C49.6888 64.9062 62.8125 51.7826 62.8125 35.5938C62.8125 19.4049 49.6888 6.28125 33.5 6.28125C17.3112 6.28125 4.1875 19.4049 4.1875 35.5938C4.1875 40.8509 5.57146 45.7848 7.99493 50.051L4.1875 64.9062L19.503 61.3548C23.6623 63.6195 28.4309 64.9062 33.5 64.9062ZM33.5 60.3966C47.1983 60.3966 58.3029 49.292 58.3029 35.5938C58.3029 21.8955 47.1983 10.7909 33.5 10.7909C19.8017 10.7909 8.69712 21.8955 8.69712 35.5938C8.69712 40.8827 10.3526 45.785 13.1735 49.8108L10.9519 58.1418L19.4299 56.0223C23.4277 58.7811 28.2752 60.3966 33.5 60.3966Z" fill="#BFC8D0"/>
                     <path d="M58.625 33.5C58.625 47.3762 47.3762 58.625 33.5 58.625C28.2073 58.625 23.2969 56.9885 19.2471 54.1939L10.6591 56.3409L12.9096 47.9017C10.0519 43.8236 8.375 38.8576 8.375 33.5C8.375 19.6238 19.6238 8.375 33.5 8.375C47.3762 8.375 58.625 19.6238 58.625 33.5Z" fill="url(#paint0_linear_53_563)"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M33.5 62.8125C49.6888 62.8125 62.8125 49.6888 62.8125 33.5C62.8125 17.3112 49.6888 4.1875 33.5 4.1875C17.3112 4.1875 4.1875 17.3112 4.1875 33.5C4.1875 38.7572 5.57146 43.6911 7.99493 47.9573L4.1875 62.8125L19.503 59.2611C23.6623 61.5258 28.4309 62.8125 33.5 62.8125ZM33.5 58.3029C47.1983 58.3029 58.3029 47.1983 58.3029 33.5C58.3029 19.8017 47.1983 8.69712 33.5 8.69712C19.8017 8.69712 8.69712 19.8017 8.69712 33.5C8.69712 38.7889 10.3526 43.6912 13.1735 47.717L10.9519 56.0481L19.4299 53.9286C23.4277 56.6874 28.2752 58.3029 33.5 58.3029Z" fill="white"/>
@@ -63,9 +64,9 @@
                 Angebote/Gesuche
             </button>
             <nav>
-                <div class="icons" id="deutsch">
+                <div class="icons">
                     <a href="">
-                        <svg width="30" height="30" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg id="deutsch" width="30" height="30" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_53_559)">
                             <path d="M2.0835 45.1549C6.81681 57.9116 19.096 67.0028 33.4998 67.0028C47.9036 67.0028 60.1828 57.9116 64.9161 45.1549L33.4998 42.242L2.0835 45.1549Z" fill="#FFDA44"/>
                             <path d="M33.4998 0.00216675C19.096 0.00216675 6.81681 9.09323 2.0835 21.8501L33.4998 24.763L64.9161 21.8499C60.1828 9.09323 47.9036 0.00216675 33.4998 0.00216675Z" fill="black"/>
@@ -79,9 +80,9 @@
                         </svg>   
                     </a>
                 </div>
-                <div class="icons" id="ukrainisch">
+                <div class="icons" >
                     <a href="">
-                        <svg width="30" height="30" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg id="ukrainisch" width="30" height="30" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_53_556)">
                             <path d="M33.5 67C52.0015 67 67 52.0015 67 33.5C67 14.9985 52.0015 0 33.5 0C14.9985 0 0 14.9985 0 33.5C0 52.0015 14.9985 67 33.5 67Z" fill="#FFDA44"/>
                             <path d="M0 33.5C0 14.9986 14.9986 0 33.5 0C52.0014 0 67 14.9986 67 33.5" fill="#338AF3"/>
@@ -97,12 +98,16 @@
             </nav>
         </div>
     </header>
+    
+    
+        <h1>Willkommen in Morsbach</h2>
+        <img src="LogoMorsbach.png" alt="Logo der Gemeinde Morsbach" class="logo" id="logo">
+    </div>
 
-    <main>
+    <main class="main">
         <section class="introduction">
-            <h1>Willkommen in Morsbach</h2>
-            <img src="LogoMorsbach.png" alt="Logo der Gemeinde Morsbach" id="logo"> 
-            <p>
+            
+            <p id="first_text">
                 Herzlich Willkommen in der Gemeinde Morsbach! 
                 Der Anfang in einem neuen Land kann schwer sein. Wir möchten Ihnen helfen, sich besser in Morsbach und der Region zu orientieren. Dafür dient diese Webseite. Wenn Sie keine Antwort auf ihre Fragen finden, 
                 können Sie zu den Sprechstunden ins Rathaus kommen.
@@ -135,44 +140,197 @@
             <div class="collapsible_box">
                 <button type="button" class="collapsible"><i class="arrow right"></i>Hilfe beim Sozialamt beantragen</button>
                 <div class="content">
-                    <p>Wenn Sie gerade erst in Deutschland angekommen sind, können Sie für die ersten Monate Sozialhilfe im Sozialamt beantragen.
+                    <p>
+                        Wenn Sie gerade erst in Deutschland angekommen sind, können Sie für die ersten Monate Sozialhilfe im Sozialamt beantragen.
                         Darunter fallen die Kosten für: die Miete, den Lebensunterhalt und für die Krankenhilfe. 
-                        Wichtig: Das gilt nur, wenn Sie ihren Lebensunterhalt nicht aus eigenen Mitteln bestreiten können.</p>
+                        Wichtig: Das gilt nur, wenn Sie ihren Lebensunterhalt nicht aus eigenen Mitteln bestreiten können.
+                    </p>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich bin mittellos, bzw. habe nur sehr geringes monatliches Einkommen.</button>
+                    <div class="content padding">
+                        <p>Die Sachbearbeiter*innen des Sozialamts bereiten Ihnen unkompliziert einen Antrag auf Sozialhilfe vor. Sobald Sie unterschrieben haben, bekommen Sie einen Barcheck an der Gemeindekasse.
+                            Mit diesem können Sie sich die Sozialhilfe bei der Volksbank Oberberg direkt neben dem Rathausgebäude auszahlen lassen.</p>
+                    </div>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich verfüge über großes Vermögen, auf das ich Zugriff habe, und/oder bin berufstätig.</button>
+                    <div class="content padding">
+                        <p>Wenn Sie sich Ihren Lebensunterhalt selbst finanzieren können, haben Sie leider kein Anrecht auf Sozialhilfe. Falls Sie sich unsicher sind, stellen Sie trotzdem den Antrag. Geben Sie dabei Ihr Vermögen und Einkommen an.
+                            <br><br>
+                            Wenn Sie arbeiten, können Sie trotzdem Anrecht auf Sozialleistungen, wie zum Beispiel Kindergeld oder Wohngeld haben. Bitte prüfen Sie hierzu die unteren Themenblöcke.</p>
+                    </div>
                 </div>
             </div>
 
             <div class="collapsible_box">
                 <button type="button" class="collapsible"><i class="arrow right"></i>Ihren Namen auf den Briefkasten schreiben/kleben</button>
                 <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Bitte besprechen Sie mit Ihrem Vermieter, wer Ihren Nachnamen auf den Briefkasten klebt oder schreibt. Nur so können Sie Post von uns oder anderen (wie zum Beispiel die Ausländerbehörde) erhalten.
+                    <br><br>
+                    Dies ist sehr wichtig, da die Post andernfalls wieder zurückgeschickt wird.</p>
                 </div>
             </div>
 
             <div class="collapsible_box">
                 <button type="button" class="collapsible"><i class="arrow right"></i>Ein Bankkonto eröffnen</button>
                 <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Sie sollten sobald wie möglich ein Bankkonto eröffnen, damit Sie später Arbeitslosengeld I (Hartz IV, **ab 1. Januar 2023 Bürgergeld**) erhalten können. Die Beantragung ist einfach. Sie brauchen dafür nur:</p>
+                        <ul>
+                            <li>einen gültigen, biometrischen Reisepass</li>
+                            <li>die Meldebescheinigung über Ihren Wohnsitz</li>
+                            <li>Ihre Steuer-Identifikationsnummer (Steuer-ID; kann auch nachgereicht werden)</li>
+                        </ul>
+                        <p>
+                        Sie können das Konto bei einer Bank Ihrer Wahl eröffnen. Es gibt manche Banken, die Vergünstigungen für ukrainische Geflüchtete anbieten. In Morsbach befinden sich die Filialen der Kreissparkasse Köln und der Volksbank Oberberg direkt auf dem Rathausplatz.
+                        <br><br>
+                        Bitte vereinbaren Sie zur Kontoeröffnung in der Bank einen Termin! In manchen Bankfilialen arbeiten russischsprachige Mitarbeiter*innen, die Ihnen weiterhelfen können.
+                        <br><br>
+                        Wir empfehlen, bei der Eröffnung des Bankkontos das Onlinebanking zu aktivieren. Dadurch können sie gut nachverfolgen, welche Einnahmen und Ausgaben Sie haben. Außerdem können Sie digitale Kontoauszüge erstellen.
+                    </p>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>❗Ich habe keinen biometrischen Reisepass oder mein Reisepass ist abgelaufen.</button>
+                    <div class="content padding">
+                        <p>Das ist ein Problem. Falls Ihr Reisepass in Kürze abläuft, versuchen Sie in der ukrainischen Botschaft oder im örtlichen ukrainischen Konsulat eine Verlängerung Ihres Passes zu bekommen.
+                            <br><br>
+                            Falls der Pass abgelaufen ist oder Sie einen alten ukrainischen Inlandspass haben, müssen Sie auf Ersatzdokumente von der Ausländerbehörde warten, bis Sie ein Konto eröffnen können. Dies kann jedoch dauern.</p>
+                    </div>
                 </div>
+                
             </div>
 
             <div class="collapsible_box">
                 <button type="button" class="collapsible"><i class="arrow right"></i>Kinder für die Schule / den Kindergarten anmelden</button>
                 <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich brauche einen Kindergartenplatz für mein Kind.</button>
+                    <div class="content padding">
+                        <p>
+                            Kindergartenplätze sind rar in Deutschland. Normalerweise müssen Eltern ihre Kinder schon ein Jahr im Voraus im Kindergarten anmelden. In beliebten Kindergärten gibt es lange Wartelisten. Allerdings werden manchmal Plätze frei.
+                            <br><br>
+                            Kitaplätze lassen sich am besten über die Plattform Little Bird finden. Hier der Link: <a href="https://portal.little-bird.de/Suche/Morsbach" target="_blank">Little Bird</a>
+                            <br><br>
+                            Manchmal lohnt es sich jedoch, sich persönlich bei einem Kindergarten nach einem Platz zu erkundigen.
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich habe ein schulpflichtiges Kind.</button>
+                    <div class="content padding">
+                        <p>
+                            Schulpflichtig sind alle Kinder, die
+                        </p>
+                        <ul>
+                            <li>
+                                ihren Wohnsitz oder gewöhnlichen Aufenthalt in NRW haben.
+                            </li>
+                            <li>
+                                die bis zum 30. September sechs Jahre alt geworden sind (Schulpflicht startet am 1. August desselben Jahres)
+                            </li>
+                            <li>
+                                die unter 18 Jahre alt sind und noch keinen ukrainischen Schulabschluss nach der 11. Klasse erworben haben
+                            </li>
+                        </ul>
+                        <p>
+                            In Morsbach gibt es eine Grundschule mit drei Standorten und eine weiterführende Schule bis zur 10. Klasse.
+                            <br><br>
+                            Informationen auf Ukrainisch zum deutschen Schulsystem: <a href="https://handbookgermany.de/uk/school" target="_blank">Handbook-Germany</a>
+                            <br><br>
+                            Weitere Fragen:
+                        </p>
+                        <button type="button" class="collapsible toggle thirdLayer"><i class="arrow dropdown right"></i>Kann mein Kind statt der deutschen Schule auch die ukrainische Schule (online) besuchen?</button>
+                        <div class="content padding">
+                            <p class="thirdLayer">
+                                In Deutschland hat die deutsche Schule Vorrang. Das heißt, dass der ukrainische Schulunterricht nur außerhalb des deutschen Unterrichts besucht werden kann. Manche Schulen finden mit den Eltern Kompromisse. Allerdings hat der Erwerb der deutschen Sprache Priorität.
+                            </p>
+                        </div>
+                        <button type="button" class="collapsible toggle thirdLayer"><i class="arrow dropdown right"></i>Bekommt mein Kind an der deutschen Schule Noten?</button>
+                        <div class="content padding">
+                            <p class="thirdLayer">
+                                Ihr Kind hat in Deutschland zwei Jahre Zeit, um die deutsche Sprache zu lernen. In dieser Zeit wird das Kind nicht benotet, außer es wird explizit erwünscht. Nach zwei Jahren wird das Kind beurteilt und der passenden Schulform zugewiesen.
+                            </p>
+                        </div>
+                        <button type="button" class="collapsible toggle thirdLayer"><i class="arrow dropdown right"></i>Was muss ich tun, um mein Kind an der Schule anzumelden?</button>
+                        <div class="content padding">
+                            <p class="thirdLayer">
+                                Wenn Ihr Kind in der Ukraine die 1. - 4. Klasse besucht hat ist die Amitola-Grundschule für Sie zuständig.
+                                <br><br>
+                                Wenn Ihr Kind in der Ukraine die 5. - 9. Klasse besucht hat, ist die Leonardo da Vinci-Schule zuständig.
+                                <br><br>
+                                Wenn Ihr Kind in der Ukraine die 10. - 11. Klasse besucht hat, ist ein Berufskolleg für Sie zuständig. Das Erstgespräch führen Sie trotzdem in der Leonardo da Vinci-Schule in Morsbach.
+                                <br><br>
+                                Bitte nehmen Sie Kontakt zu der zuständigen Schule auf und vereinbaren Sie einen Termin für ein Erstgespräch. Die Schule stellt nach dem Erstgespräch einen Antrag ans Schulamt. Das Schulamt entscheidet daraufhin, an welche Schule Ihr Kind gehen wird. Dies kann eine bis mehrere Wochen dauern. Die Schule meldet sich bei Ihnen, sobald Ihr Kind zur Schule gehen kann.
+                            </p>
+                        </div>
+                        <button type="button" class="collapsible toggle thirdLayer"><i class="arrow dropdown right"></i>Mein Kind ist zwischen 16 und 18 Jahre alt und hat schon das ukrainische Abitur.</button>
+                        <div class="content padding">
+                            <p class="thirdLayer">
+                                In dem Fall muss das Kind nicht das Berufskolleg besuchen. Wenn es möchte, kann es einen Integrationskurs (Jugendintegrationskurs) von einem Sprachkursträger in der Region belegen. Holen Sie sich dafür eine Verpflichtung von Ihrem Jobcenter.
+                            </p>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
 
             <div class="collapsible_box">
                 <button type="button" class="collapsible"><i class="arrow right"></i>Einladung von der Ausländerbehörde</button>
                 <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>
+                        Innerhalb einer Woche sollten Sie eine Einladung zu einem Gespräch in der Ausländerbehörde erhalten. **Bitte füllen Sie den beiliegenden Antrag vollständig aus!** Nehmen Sie zu dem Termin alle nötigen Unterlagen (vor allem Passpapiere) mit. Vor Ort werden Ihre Fingerabdrücke genommen und ein Passfoto gemacht.
+                        <br><br>
+                        Bei dem Gespräch wird Ihnen eine Fiktionsbescheinigung ausgehändigt. Mit dieser haben Sie eine befristete Aufenthaltsgenehmigung und in der Regel eine Arbeitserlaubnis in Deutschland. Achten Sie auf die Wohnsitzauflage! Normalerweise dürfen Sie nur in dem Bundesland (evtl. auch Gemeinde/Stadt) eine Wohnadresse anmelden, in der Sie Ihre Fiktionsbescheinigung erhalten haben.
+                        <br><br>
+                        Bei dem Termin in der Ausländerbehörde stellen Sie einen Antrag auf einen Aufenthaltstitel (siehe unten). Sobald dieser fertig ist, erhalten Sie einen weiteren Brief mit weiteren Informationen. In der Regel dauert dies mindestens einen Monat.
+                        <br><br>
+                        Wenn Sie den Aufenthaltstitel abholen, erhalten Sie ein weiteres grünes Zusatzblatt. Bitte beachten Sie, dass Sie beide Dokumente mit sich führen müssen.
+                    </p>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich bin aus der Ukraine geflüchtet, habe aber keine ukrainische Staatsbürgerschaft.</button>
+                    <div class="content padding">
+                        <p>
+                            Wenn Sie in der Ukraine über einen unbefristeten Aufenthaltstitel verfügen und Sie am 24. Februar 2022 in der Ukraine gelebt haben, fallen Sie wahrscheinlich auch unter §24-Aufenthaltsgesetz. Näheres erfahren Sie bei Ihrer Ausländerbehörde. 
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <div class="collapsible_box">
                 <button type="button" class="collapsible"><i class="arrow right"></i>Anträge für das Jobcenter vorbereiten</button>
                 <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>
+                        Sobald Sie in der Ausländerbehörde eine Fiktionsbescheinigung erhalten, haben Sie im darauffolgenden Monat Anspruch auf Bürgergeldleistungen vom Jobcenter. Welche Dokumente Sie ausfüllen müssen, hängt von Ihrer Familiensituation ab. Bitte beachten Sie, bei den Anträgen Ihr Vermögen und Ihre monatlichen Einkünfte anzugeben.
+                        <br><br>
+                        Das Jobcenter zahlt die Kosten für die Miete inkl. Neben- und Heizkosten (außer Strom) und Leistungen zum Lebensunterhalt.
+                        <br><br>
+                        Nachdem Sie die Anträge ausgefüllt haben, machen Sie einen Termin beim Jobcenter vor Ort aus. In Morsbach ist das Jobcenter Oberberg zuständig (Wisseraue 1, 51597 Morsbach). Termine können unter folgender E-Mail-Adresse vereinbart werden: <a href="mailto:Jobcenter-Oberberg.Morsbach@Jobcenter-ge.de">Jobcenter-Oberberg.Morsbach@Jobcenter-ge.de</a>
+                        <br><br>
+                        Die Kontaktdaten Ihrer persönlichen Ansprechpartnerinnen in Morsbach finden Sie hier: <a href="https://www.jobcenter-oberberg.de/morsbach.php" target="_blank">Ansprechpartnerinnen</a>
+                    </p>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Zu den Antragsformularen:</button>
+                    <div class="content padding">
+                        <p>
+                            <ul>
+                                <li><a href="https://www.arbeitsagentur.de/datei/antrag-sgb2_ba042689.pdf" target="_blank">HAUPTANTRAG</a></li>
+                            </ul>
+                        <p>
+                            <br>
+                            Hilfe zum Ausfüllen in anderen Sprachen:</p>
+                            <ul>
+                                <li><a href="https://www.arbeitsagentur.de/datei/hinweise-antrag-sgb2-ukrainisch_ba042769.pdf">Ukrainisch</a></li>
+                                <li><a href="https://www.arbeitsagentur.de/datei/hinweise-antrag-sgb2-russisch_ba042764.pdf" target="_blank">Russisch</a></li>
+                                <li><a href="https://www.arbeitsagentur.de/datei/hinweise-antrag-sgb2-englisch_ba042824.pdf" target="_blank">Englisch</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Musterbescheide:</button>
+                    <div class="content padding">
+                        <p>
+                            <ul>
+                                <li><a href="https://www.arbeitsagentur.de/datei/musterbescheid-algii_ba035120.pdf" target="_blank">Musterbescheid SGB 2 (arbeitsagentur.de)</a></li>
+                                <li><a href="https://www.arbeitsagentur.de/datei/musterbescheid-zum-arbeitslosengeld-ii-ukrainisch_ba036675.pdf">Musterbescheid zum Arbeitslosengeld II - ukrainisch (arbeitsagentur.de)</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>❗Ich erhalte in der Ukraine eine Altersrente</button>
+                    <div class="content padding">
+                        <p>
+                            Falls Sie in der Ukraine eine Altersrente erhalten, haben Sie keinen Anspruch auf Leistungen vom Jobcenter. Dann müssen Sie einen Antrag auf Grundsicherung im Sozialamt bei Frau Görres (Morsbach) stellen.
+                            <br><br>
+                            Teilen Sie dort die Höhe Ihrer ukrainischen Rente mit und, ob sie in Deutschland Zugriff auf das Geld haben. Falls Sie Zugriff auf Ihre Rente haben, wird Ihnen der Betrag von der Grundsicherung abgezogen.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -186,20 +344,59 @@
             <div class="collapsible_box">
                 <button type="button" class="collapsible"><i class="arrow right"></i>Für einen Integrationskurs anmelden</button>
                 <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                    Das Jobcenter verpflichtet Sie zum Erlernen der deutschen Sprache, falls Sie noch kein Deutschsprechen sollten. Mit dieser Sprachkursverpflichtung melden Sie sich bei einem Sprachkursträger in der Region für einen Integrationskurs an.
+                    <br><br>
+                    Der Besuch des Integrationskurs ist verpflichtend. Bei Abwesenheit muss ein ärztliches Attest vorgezeigt werden.
+                    <br><br>
+                    Der nächste Sprachkursträger in der Region ist der Internationale Bund (IB) in Waldbröl, Vennstr. 4.
+                </p>
                 </div>
             </div>
 
             <div class="collapsible_box">
                 <button type="button" class="collapsible"><i class="arrow right"></i>UND/ODER: Arbeit finden</button>
                 <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Welche Dokumente brauche ich, um in Deutschland arbeiten zu dürfen?</button>
+                    <div class="content padding">
+                        <p>
+                            Um in Deutschland arbeiten zu können, brauchen Sie entweder ein Arbeitsvisum oder eine Arbeitsgenehmigung. Normalerweise wird Ihnen (im Falle von §24 Aufenhtaltsgesetz) die Erwerbstätigkeit mit der Ausstellung der Fiktionsbescheinigung erlaubt. Nach der Anmeldung Ihres Wohnsitzes bekommen Sie ebenfalls eine Steuer-ID zugesandt, die Sie bei der Aufnahme einer Beschäftigung brauchen.
+                            <br><br>
+                            Um die Rentenversicherungsnummer müssen Sie sich nicht kümmern. Diese beantragt Ihre deutsche Krankenversicherung für Sie bei der Rentenversicherung. Bitte bewahren Sie diese Unterlagen gut auf!
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Bekomme ich weiter Sozialleistungen, wenn ich arbeiten gehe?</button>
+                    <div class="content padding">
+                        <p>
+                            Das hängt ganz von Ihrem Einkommen ab. Lassen Sie Ihre Bedarfe und Ihr Einkommen am besten vom Jobcenter prüfen. Selbst wenn Sie keinen Anspruch mehr auf Bürgergeld haben, könnte es sein, dass Sie andere Leistungen wie beispielsweise Wohngeld beantragen können. Informationen über das Wohngeld finden Sie hier: <a href="https://www.mhkbd.nrw/themen/bau/wohnen/wohngeld" target="_blank">Wohngeld | MHKBD NRW</a>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Wie hoch ist der Mindestlohn in Deutschland?</button>
+                    <div class="content padding">
+                        <p>
+                            Seit dem 01. Oktober 2022 liegt der Mindestlohn in Deutschland bei 12,00€ brutto pro Stunde.
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Wie sind die Kündigungsfristen in Deutschland? Bekomme ich Arbeitslosengeld, wenn ich kündige/gekündigt werde?</button>
+                    <div class="content padding">
+                        <p>
+                            Die Kündigungsfristen sind normalerweise im Arbeitsvertrag festgesetzt. Allerdings gibt es in Deutschland eine Mindestkündigungsfrist von 4 Wochen. Diese kann innerhalb der 6-monatigen Probezeit auch bei 2 Wochen liegen. Je nach Beschäftigungsdauer verlängert sich die Kündigungsfrist (allerdings nur für den Arbeitgeber).
+                            <br><br>
+                            Bei Verstößen gegen Arbeitsvorschriften oder Verweigerung von Arbeitsanweisungen kann der Arbeitgeber auch eine fristlose Kündigung aussprechen, die sofort gilt. Diese muss jedoch innerhalb von zwei Wochen nach dem Vergehen ausgesprochen werden. In diesem Fall kann die Agentur für Arbeit Ihnen für drei Monate die Leistungen verwehren, ebenso wenn Sie selbstständig kündigen.
+                            <br><br>
+                            Haben Sie innerhalb der letzten zwei Jahre mindestens 12 Monate voll sozialversicherungspflichtig gearbeitet? Dann haben Sie Anrecht auf Arbeitslosengeld I. Wenn nicht, müssen Sie sich an das Jobcenter bzgl. Bürgergeld richten.
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Wo finde ich Arbeit, auch ohne große Deutschkenntnisse?</button>
+                    <div class="content padding">
+                        <p>
+                            Ohne Deutschkenntnisse ist die Arbeitssuche in Deutschland sehr schwierig. Deswegen unterstützt Sie das Jobcenter, indem es Integrationskurse mitfinanziert. Sollten Sie trotzdem schon arbeiten wollen, finden Sie Jobs bei lokalen Pflegediensten oder Fabrikbetrieben, die nur wenig Deutschkenntnisse voraussetzen.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <footer>
-                <p>Copyright</p>
-            </footer>
+            
 
             <script>
                 var coll = document.getElementsByClassName("collapsible");
@@ -223,12 +420,12 @@
                 }
                                 </script>
         </section>
-
+        <footer class="footer">
+            <p>Copyright</p>
+        </footer>
 
     </main>
 
-<footer>
-
-</footer>
+    
 </body>
 </html>
