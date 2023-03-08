@@ -100,14 +100,25 @@
     </header>
     
     
-        <h1>Willkommen in Morsbach</h2>
-        <img src="LogoMorsbach.png" alt="Logo der Gemeinde Morsbach" class="logo" id="logo">
+        <div class="willkommen">
+            <h1 id="titlephone">Willkommen in Morsbach</h2>
+            <img src="LogoMorsbach.png" alt="Logo der Gemeinde Morsbach" class="logo" id="logo">
+            <p class="first_text computer">
+                Herzlich Willkommen in der Gemeinde Morsbach!
+                Der Anfang in einem neuen Land kann schwer sein. Wir möchten Ihnen helfen, sich besser in Morsbach und der Region zu orientieren. Dafür dient diese Webseite. Wenn Sie keine Antwort auf ihre Fragen finden,
+                können Sie zu den Sprechstunden ins Rathaus kommen.
+            </p>
+
+            <div class="computer" id="copyright">
+                <p >Copyright</p>
+            </div>
+        </div>
     </div>
 
     <main class="main">
         <section class="introduction">
             
-            <p id="first_text">
+            <p class="first_text phone">
                 Herzlich Willkommen in der Gemeinde Morsbach! 
                 Der Anfang in einem neuen Land kann schwer sein. Wir möchten Ihnen helfen, sich besser in Morsbach und der Region zu orientieren. Dafür dient diese Webseite. Wenn Sie keine Antwort auf ihre Fragen finden, 
                 können Sie zu den Sprechstunden ins Rathaus kommen.
@@ -116,7 +127,7 @@
             <h2>Die ersten Schritte nach der Ankunft in Morsbach</h3>
 
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>Den Wohnsitz anmelden</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>Den Wohnsitz anmelden</p></button>
                 <div class="content">
                     <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich wurde von der Gemeinde Morsbach untergebracht</button>
                     <div class="content padding">
@@ -138,17 +149,19 @@
                 </div>
             </div>
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>Hilfe beim Sozialamt beantragen</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>Hilfe beim Sozialamt beantragen</p></button>
                 <div class="content">
                     <p>
                         Wenn Sie gerade erst in Deutschland angekommen sind, können Sie für die ersten Monate Sozialhilfe im Sozialamt beantragen.
                         Darunter fallen die Kosten für: die Miete, den Lebensunterhalt und für die Krankenhilfe. 
                         Wichtig: Das gilt nur, wenn Sie ihren Lebensunterhalt nicht aus eigenen Mitteln bestreiten können.
                     </p>
-                    <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich bin mittellos, bzw. habe nur sehr geringes monatliches Einkommen.</button>
-                    <div class="content padding">
-                        <p>Die Sachbearbeiter*innen des Sozialamts bereiten Ihnen unkompliziert einen Antrag auf Sozialhilfe vor. Sobald Sie unterschrieben haben, bekommen Sie einen Barcheck an der Gemeindekasse.
-                            Mit diesem können Sie sich die Sozialhilfe bei der Volksbank Oberberg direkt neben dem Rathausgebäude auszahlen lassen.</p>
+                    <div class="border">
+                        <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich bin mittellos, bzw. habe nur sehr geringes monatliches Einkommen.</button>
+                        <div class="content padding">
+                            <p>Die Sachbearbeiter*innen des Sozialamts bereiten Ihnen unkompliziert einen Antrag auf Sozialhilfe vor. Sobald Sie unterschrieben haben, bekommen Sie einen Barcheck an der Gemeindekasse.
+                                Mit diesem können Sie sich die Sozialhilfe bei der Volksbank Oberberg direkt neben dem Rathausgebäude auszahlen lassen.</p>
+                        </div>
                     </div>
                     <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich verfüge über großes Vermögen, auf das ich Zugriff habe, und/oder bin berufstätig.</button>
                     <div class="content padding">
@@ -160,7 +173,7 @@
             </div>
 
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>Ihren Namen auf den Briefkasten schreiben/kleben</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>Ihren Namen auf den Briefkasten schreiben/kleben</p></button>
                 <div class="content">
                 <p>Bitte besprechen Sie mit Ihrem Vermieter, wer Ihren Nachnamen auf den Briefkasten klebt oder schreibt. Nur so können Sie Post von uns oder anderen (wie zum Beispiel die Ausländerbehörde) erhalten.
                     <br><br>
@@ -169,7 +182,7 @@
             </div>
 
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>Ein Bankkonto eröffnen</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>Ein Bankkonto eröffnen</p></button>
                 <div class="content">
                     <p>Sie sollten sobald wie möglich ein Bankkonto eröffnen, damit Sie später Arbeitslosengeld I (Hartz IV, **ab 1. Januar 2023 Bürgergeld**) erhalten können. Die Beantragung ist einfach. Sie brauchen dafür nur:</p>
                         <ul>
@@ -195,7 +208,7 @@
             </div>
 
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>Kinder für die Schule / den Kindergarten anmelden</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>Kinder für die Schule / den Kindergarten anmelden</p></button>
                 <div class="content">
                     <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich brauche einen Kindergartenplatz für mein Kind.</button>
                     <div class="content padding">
@@ -266,7 +279,7 @@
             </div>
 
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>Einladung von der Ausländerbehörde</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>Einladung von der Ausländerbehörde</p></button>
                 <div class="content">
                     <p>
                         Innerhalb einer Woche sollten Sie eine Einladung zu einem Gespräch in der Ausländerbehörde erhalten. **Bitte füllen Sie den beiliegenden Antrag vollständig aus!** Nehmen Sie zu dem Termin alle nötigen Unterlagen (vor allem Passpapiere) mit. Vor Ort werden Ihre Fingerabdrücke genommen und ein Passfoto gemacht.
@@ -287,7 +300,7 @@
             </div>
 
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>Anträge für das Jobcenter vorbereiten</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>Anträge für das Jobcenter vorbereiten</p></button>
                 <div class="content">
                     <p>
                         Sobald Sie in der Ausländerbehörde eine Fiktionsbescheinigung erhalten, haben Sie im darauffolgenden Monat Anspruch auf Bürgergeldleistungen vom Jobcenter. Welche Dokumente Sie ausfüllen müssen, hängt von Ihrer Familiensituation ab. Bitte beachten Sie, bei den Anträgen Ihr Vermögen und Ihre monatlichen Einkünfte anzugeben.
@@ -335,14 +348,14 @@
             </div>
 
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>Weitere Anträge vorbereiten</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>Weitere Anträge vorbereiten</p></button>
                 <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
 
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>Für einen Integrationskurs anmelden</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>Für einen Integrationskurs anmelden</p></button>
                 <div class="content">
                 <p>
                     Das Jobcenter verpflichtet Sie zum Erlernen der deutschen Sprache, falls Sie noch kein Deutschsprechen sollten. Mit dieser Sprachkursverpflichtung melden Sie sich bei einem Sprachkursträger in der Region für einen Integrationskurs an.
@@ -355,7 +368,7 @@
             </div>
 
             <div class="collapsible_box">
-                <button type="button" class="collapsible"><i class="arrow right"></i>UND/ODER: Arbeit finden</button>
+                <button type="button" class="collapsible"><i class="arrow right"></i><p>UND/ODER: Arbeit finden</p></button>
                 <div class="content">
                     <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Welche Dokumente brauche ich, um in Deutschland arbeiten zu dürfen?</button>
                     <div class="content padding">
@@ -420,7 +433,7 @@
                 }
                                 </script>
         </section>
-        <footer class="footer">
+        <footer class="footer phone">
             <p>Copyright</p>
         </footer>
 
