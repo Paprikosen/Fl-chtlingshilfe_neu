@@ -200,9 +200,23 @@ h2 {
     font-size: 2.3rem;
 }
 
-p {
+p, figcaption {
     font-size: 1.9rem;
     font-weight: 400;
+}
+figure {
+    width: 100%;
+}
+
+figure > img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: var(--darkblue);
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 section {
@@ -461,7 +475,6 @@ li {
     
 
     h1 {
-        margin-bottom: 0px;
         font-size: 2.5rem;
     }
     #logo {
@@ -525,7 +538,7 @@ li {
       }
 
    #titlephone {
-        margin-top: 84px;
+        margin-top: 110px;
 
     }
     .content > p, li {
