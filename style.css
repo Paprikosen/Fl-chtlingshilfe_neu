@@ -10,11 +10,11 @@ font-family: 'Cinzel', serif; */
 
 
 
-@media (min-width: 1250px) {
+@media (min-width: 1455px) and (min-height: 905px) {
 * {
     margin: 0;
     padding: 0;
-    font-size: 72%;
+    font-size: 76%;
 }
 
 
@@ -193,7 +193,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 20px;
     text-align: left;
     font-family: 'Cinzel', serif;
@@ -373,7 +373,7 @@ li {
     position: relative;
     width: 50px;
     height: 24px;
-    margin: 30px 0 5px 0;
+    margin: 55px 0 5px 0;
   }
 
   .toggle-switch input[type="checkbox"] {
@@ -413,7 +413,7 @@ li {
     transform: translateX(26px);
   }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1455px), (max-height: 905px) {
     * {
         margin: 0;
         padding: 0;
@@ -445,6 +445,7 @@ li {
 
     nav {
         gap: 15px;
+        height: 40px;
     }
     
     .first_text.phone {
@@ -473,20 +474,14 @@ li {
         position: relative;
     }
     
+    
 
     h1 {
         font-size: 2.5rem;
     }
     #logo {
-        left: 50%;
-	    margin-left: -50vw;
-	    margin-right: -50vw;
-        margin-top: -90px;
-        margin-bottom: -10px;
-	    max-width: 100vw;
-	    position: relative;
-	    right: 50%;
-	    width: 99vw;
+	    width: 100%;
+    
     }
 
     
@@ -568,5 +563,7 @@ li {
     .caption {
         margin-bottom: 40px;
     }
+
+    
 }
 
