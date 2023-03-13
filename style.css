@@ -14,7 +14,7 @@ font-family: 'Cinzel', serif; */
 * {
     margin: 0;
     padding: 0;
-    font-size: 67%;
+    font-size: 72%;
 }
 
 
@@ -42,6 +42,8 @@ header {
 }
 main {
     grid-area: main;
+    height: 100%;
+
 }
 
 .left {
@@ -56,9 +58,11 @@ main {
 
 a {
     font-size: 1.9rem;
-    color: var(--darkblue);
+    color: var(--darkblue);   
+}
 
-    
+.introduction {
+    margin-bottom: 30px;
 }
 
 .phone {
@@ -72,15 +76,22 @@ a {
     text-align: center;
 }
 
-#copyright {
+#firstTestComputer {
+    height: 192px;
+}
+.caption {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+#impressum {
     position: absolute;
     bottom: 20px;
     left: 0;
     right: 0;
-    font-weight: 200;
 }
 
-#copyright > p {
+#impressum > a {
     font-weight:400;
 }
 
@@ -106,13 +117,13 @@ footer {
 }
 
 #deutsch {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 #ukrainisch {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 nav {
@@ -136,6 +147,19 @@ nav {
     font-size: 1.7rem;
 }
 
+#button_link {
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.icons > a {
+    line-height: normal;
+}
+
+#header-button:hover {
+    cursor: pointer;
+}
+
 
 
 h1, h2, h3 {
@@ -144,6 +168,11 @@ h1, h2, h3 {
 
 p, div, button {
     font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+p, a, li {
+    line-height: 110%;
 }
 
 h1 {
@@ -158,12 +187,13 @@ h1 {
     margin: auto;
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-top: -100px;
+    margin-bottom: 0px;
     max-width: 500px;
 }
 
 h2 {
-    margin-top: 145px;
+    margin-top: 50px;
     margin-bottom: 20px;
     text-align: left;
     font-family: 'Cinzel', serif;
@@ -190,7 +220,7 @@ section {
     text-align: center;
     outline: none;
     margin: 5px 0;
-    border-radius: 5px 50px 50px 5px;
+    /* border-radius: 5px 50px 50px 5px; */
   }
 
   .collapsible {
@@ -217,15 +247,21 @@ section {
     margin-left: -5px;
   }
 
+
 .collapsible.toggle {
     background-color: #fff;
-    text-align: center;
+    text-align: left;
     padding-left: 0;
     color: var(--darkblue);
     width: 100%;  
     line-height: 110%; 
-    flex-wrap: nowrap;
+    display: block;
+    justify-content: center;
 }
+
+.collapsible.toggle > i {
+    margin-right: 10px;
+  }
 
 
 .collapsible.toggle.thirdLayer {
@@ -244,7 +280,7 @@ section {
   }
 
 .content:last-of-type {
-    border-radius: 0 0 30px 0;
+    /* border-radius: 0 0 30px 0; */
 }
 
 .content > p, li {
@@ -263,9 +299,6 @@ section {
     margin-left: 8px;
 }
 
-.collapsible.toggle + p {
-    border-top: 1px solid var(--darkblue);
-}
 
 
 li {
@@ -306,7 +339,64 @@ li {
     margin-bottom: 3px;
   }
 
+  #mehr {
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+  }
 
+  .willkommen {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Toggle Switcher */
+
+.toggle-switch {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 24px;
+    margin: 17px 0 5px 0;
+  }
+
+  .toggle-switch input[type="checkbox"] {
+    display: none;
+  }
+
+  .toggle-switch label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 24px;
+    background-color: #4CAF50;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+  }
+
+  .toggle-switch label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .toggle-switch input[type="checkbox"]:checked + label {
+    background-color: #ccc;
+  }
+
+  .toggle-switch input[type="checkbox"]:checked + label:after {
+    transform: translateX(26px);
+  }
 
 @media only screen and (max-width: 1250px) {
     * {
@@ -321,6 +411,7 @@ li {
         width: 100%;
         display: relative;
         
+        
     }
     header {
         height: 60px;
@@ -332,7 +423,7 @@ li {
     }
 
     .navbar {
-        width: 90%;
+        width: 95%;
         max-width: 800px;
         margin: auto;    
     }
@@ -381,7 +472,7 @@ li {
 	    max-width: 100vw;
 	    position: relative;
 	    right: 50%;
-	    width: 100vw;
+	    width: 99vw;
     }
 
     
@@ -401,7 +492,15 @@ li {
     a {
         font-size: 1.8rem;
     }
-
+    #deutsch {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #ukrainisch {
+        width: 40px;
+        height: 40px;
+    }
     
 
     .collapsible.toggle {
@@ -433,7 +532,7 @@ li {
     }
 
     footer {
-        margin-top: 20px;
+        margin-top: 0px;
         text-align: center;
     }
 
@@ -451,4 +550,9 @@ li {
     .computer {
         display: none;
     }
+
+    .caption {
+        margin-bottom: 40px;
+    }
 }
+
