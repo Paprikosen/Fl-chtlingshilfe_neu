@@ -130,7 +130,7 @@
                 Herzlich Willkommen in der Gemeinde Morsbach! Der Anfang in einem neuen Land kann schwer sein. Wir möchten Ihnen helfen, sich besser in Morsbach und der Region zu orientieren. Dafür dient diese Webseite. Wenn Sie keine Antwort auf ihre Fragen finden, können Sie zu den Sprechstunden ins Rathaus kommen.
             </p>
 
-            <h2>Die ersten Schritte nach der Ankunft in Morsbach</h3>
+            <h2 class="text" data-german="Die ersten Schritte nach der Ankunft in Morsbach" data-ukrainian="Перші кроки після прибуття в Морсбах">Die ersten Schritte nach der Ankunft in Morsbach</h3>
 
             <!-- Den Wohnsitz anmelden -->
             <div class="collapsible_box">
@@ -138,14 +138,14 @@
                 <div class="content">
                     <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich wurde von der Gemeinde Morsbach untergebracht</button>
                     <div class="content padding">
-                        <p>
+                        <p class="text" data-german="Dann müssen Sie nichts tun. Wir melden Sie direkt bei uns an. <br><br> Wenn Sie eine Meldebescheinigung benötigen, bekommen Sie diese während der Öffnungszeiten im Bürgerbüro in der Gemeindeverwaltung Morsbach." data-ukrainian="Зареєструвати місце проживання -> Мене розмістила муніципалітет Морсбаха <br><br> Тоді вам не потрібно нічого робити. Ми зареєструємо вас безпосередньо у нас.<br><br> Якщо вам потрібне свідоцтво про реєстрацію, ви можете отримати його в години роботи в офісі громадян муніципальної адміністрації Морсбах.">
                             Dann müssen Sie nichts tun. Wir melden Sie direkt bei uns an. <br><br>
                             Wenn Sie eine Meldebescheinigung benötigen, bekommen Sie diese während der Öffnungszeiten im Bürgerbüro in der Gemeindeverwaltung Morsbach.
                         </p>
                     </div>
                     <button type="button" class="collapsible toggle"><i class="arrow dropdown right"></i>Ich bin privat untergekommen/ Ich habe eine Unterkunft gemietet</button>
                     <div class="content padding">
-                        <p>
+                        <p class="text" data-german="" data-ukrainian="">
                             Bitte lassen Sie Ihren Vermieter die Wohnungsgeberbestätigung ausfüllen und unterschreiben. Bringen Sie dieses Dokument und Ihren Reisepass während der Öffnungszeiten in die Gemeindeverwaltung Morsbach.
                             Im Bürgerbüro werden Sie angemeldet und erhalten eine Meldebescheinigung. <br><br>
 
@@ -500,55 +500,11 @@
 
             
 
-            <script>
-                var coll = document.getElementsByClassName("collapsible");
-                var i;
+        <script src="function.js">
+                
+        </script>
 
-                for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    var arrow = this.querySelector(".arrow");
-                    if (content.style.display === "block") {
-                    content.style.display = "none";
-                    arrow.classList.remove("down");
-                    arrow.classList.add("right");
-                    } else {
-                    content.style.display = "block";
-                    arrow.classList.remove("right");
-                    arrow.classList.add("down");
-                    }
-                });
-                }
-                </script>
-
-                <!-- Übersetzung in andere Sprache -->
-                <script>
-                    const texts = document.querySelectorAll(".text");
-                    const toggleButton = document.getElementById("toggleButton");
-                    let active = true;
-              
-                    toggleButton.addEventListener("click", function() {
-                      active = !active;
-                      if (active) {
-                        toggleButton.innerHTML = "Toggle Language Switcher (ON)";
-                      } else {
-                        toggleButton.innerHTML = "Toggle Language Switcher (OFF)";
-                      }
-                    });
-              
-                    texts.forEach(text => {
-                      text.addEventListener("click", function() {
-                        if (active) {
-                          if (text.innerHTML === this.dataset.german) {
-                            text.innerHTML = this.dataset.ukrainian;
-                          } else {
-                            text.innerHTML = this.dataset.german;
-                          }
-                        }
-                      });
-                    });
-                  </script>
+                
         </section>
         <footer class="footer phone">
             <a href="">Impressum</a>
